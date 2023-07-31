@@ -5,7 +5,7 @@ services:
     image: postgres:13
     environment:
       - POSTGRES_DB=my_store
-      - POSTGRES_USER=nico
+      - POSTGRES_USER=alex
       - POSTGRES_PASSWORD=admin123
     ports:
       - 5432:5432
@@ -30,7 +30,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./mysql_data:/var/lib/mysql
+      - ./postgres_data:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
