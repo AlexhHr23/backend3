@@ -5,21 +5,21 @@ async function sendMail() {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "all.gmail.com",
     secure: true, // true for 465, false for other ports
     port: 465,
     auth: {
-      user: 'eldedotesss@gmail.com',
-      pass: 'yuhuuu'
+      user: 'alex.hernandez@gmail.com',
+      pass: 'alex12345'
     }
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: 'eldedotesss.demo@gmail.com', // sender address
-    to: "eldedotesss2.demo@gmail.com", // list of receivers
+    from: 'alex.hernandez@gmail.com', // sender address
+    to: "alex.hernandez@gmail.com", // list of receivers
     subject: "Este es un nuevo correo", // Subject line
-    text: "Hola Dedotes", // plain text body
+    text: "Hola Alex", // plain text body
     html: "<b>Hola santi</b>", // html body
   });
 
